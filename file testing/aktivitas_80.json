@@ -1,0 +1,402 @@
+[
+    {
+        "nama": "Aktivitas 1",
+        "durasi": 10,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 2",
+        "durasi": 18,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 3",
+        "durasi": 15,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 4",
+        "durasi": 48,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 5",
+        "durasi": 36,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 6",
+        "durasi": 54,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 7",
+        "durasi": 11,
+        "prioritas": 4
+    },
+    {
+        "nama": "Aktivitas 8",
+        "durasi": 44,
+        "prioritas": 5
+    },
+    {
+        "nama": "Aktivitas 9",
+        "durasi": 37,
+        "prioritas": 7
+    },
+    {
+        "nama": "Aktivitas 10",
+        "durasi": 41,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 11",
+        "durasi": 53,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 12",
+        "durasi": 55,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 13",
+        "durasi": 12,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 14",
+        "durasi": 14,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 15",
+        "durasi": 13,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 16",
+        "durasi": 59,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 17",
+        "durasi": 43,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 18",
+        "durasi": 12,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 19",
+        "durasi": 21,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 20",
+        "durasi": 39,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 21",
+        "durasi": 15,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 22",
+        "durasi": 27,
+        "prioritas": 4
+    },
+    {
+        "nama": "Aktivitas 23",
+        "durasi": 16,
+        "prioritas": 7
+    },
+    {
+        "nama": "Aktivitas 24",
+        "durasi": 52,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 25",
+        "durasi": 21,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 26",
+        "durasi": 16,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 27",
+        "durasi": 50,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 28",
+        "durasi": 20,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 29",
+        "durasi": 20,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 30",
+        "durasi": 19,
+        "prioritas": 4
+    },
+    {
+        "nama": "Aktivitas 31",
+        "durasi": 35,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 32",
+        "durasi": 19,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 33",
+        "durasi": 31,
+        "prioritas": 4
+    },
+    {
+        "nama": "Aktivitas 34",
+        "durasi": 48,
+        "prioritas": 7
+    },
+    {
+        "nama": "Aktivitas 35",
+        "durasi": 11,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 36",
+        "durasi": 36,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 37",
+        "durasi": 24,
+        "prioritas": 4
+    },
+    {
+        "nama": "Aktivitas 38",
+        "durasi": 28,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 39",
+        "durasi": 54,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 40",
+        "durasi": 34,
+        "prioritas": 5
+    },
+    {
+        "nama": "Aktivitas 41",
+        "durasi": 26,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 42",
+        "durasi": 15,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 43",
+        "durasi": 29,
+        "prioritas": 7
+    },
+    {
+        "nama": "Aktivitas 44",
+        "durasi": 17,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 45",
+        "durasi": 57,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 46",
+        "durasi": 21,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 47",
+        "durasi": 41,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 48",
+        "durasi": 32,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 49",
+        "durasi": 30,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 50",
+        "durasi": 57,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 51",
+        "durasi": 55,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 52",
+        "durasi": 43,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 53",
+        "durasi": 16,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 54",
+        "durasi": 56,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 55",
+        "durasi": 21,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 56",
+        "durasi": 52,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 57",
+        "durasi": 27,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 58",
+        "durasi": 56,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 59",
+        "durasi": 50,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 60",
+        "durasi": 21,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 61",
+        "durasi": 12,
+        "prioritas": 5
+    },
+    {
+        "nama": "Aktivitas 62",
+        "durasi": 30,
+        "prioritas": 5
+    },
+    {
+        "nama": "Aktivitas 63",
+        "durasi": 50,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 64",
+        "durasi": 51,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 65",
+        "durasi": 59,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 66",
+        "durasi": 53,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 67",
+        "durasi": 19,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 68",
+        "durasi": 37,
+        "prioritas": 6
+    },
+    {
+        "nama": "Aktivitas 69",
+        "durasi": 22,
+        "prioritas": 3
+    },
+    {
+        "nama": "Aktivitas 70",
+        "durasi": 23,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 71",
+        "durasi": 35,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 72",
+        "durasi": 25,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 73",
+        "durasi": 52,
+        "prioritas": 10
+    },
+    {
+        "nama": "Aktivitas 74",
+        "durasi": 47,
+        "prioritas": 2
+    },
+    {
+        "nama": "Aktivitas 75",
+        "durasi": 52,
+        "prioritas": 8
+    },
+    {
+        "nama": "Aktivitas 76",
+        "durasi": 38,
+        "prioritas": 1
+    },
+    {
+        "nama": "Aktivitas 77",
+        "durasi": 41,
+        "prioritas": 7
+    },
+    {
+        "nama": "Aktivitas 78",
+        "durasi": 13,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 79",
+        "durasi": 11,
+        "prioritas": 9
+    },
+    {
+        "nama": "Aktivitas 80",
+        "durasi": 60,
+        "prioritas": 8
+    }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "nama": "Membaca Buku",
+    "durasi": 30,
+    "prioritas": 8
+  },
+  {
+    "nama": "Menulis Laporan",
+    "durasi": 45,
+    "prioritas": 9
+  },
+  {
+    "nama": "Olahraga Pagi",
+    "durasi": 25,
+    "prioritas": 7
+  },
+  {
+    "nama": "Belajar Pemrograman",
+    "durasi": 50,
+    "prioritas": 10
+  },
+  {
+    "nama": "Meeting Online",
+    "durasi": 40,
+    "prioritas": 6
+  },
+  {
+    "nama": "Memasak",
+    "durasi": 20,
+    "prioritas": 5
+  },
+  {
+    "nama": "Merapikan Kamar",
+    "durasi": 15,
+    "prioritas": 4
+  },
+  {
+    "nama": "Mengerjakan Tugas",
+    "durasi": 35,
+    "prioritas": 9
+  },
+  {
+    "nama": "Membaca Berita",
+    "durasi": 10,
+    "prioritas": 3
+  },
+  {
+    "nama": "Istirahat Siang",
+    "durasi": 20,
+    "prioritas": 6
+  }
+]

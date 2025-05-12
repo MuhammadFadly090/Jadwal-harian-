@@ -1,0 +1,27 @@
+[
+  {
+    "nama": "Membaca Buku",
+    "durasi": 20,
+    "prioritas": 7
+  },
+  {
+    "nama": "Olahraga",
+    "durasi": 30,
+    "prioritas": 9
+  },
+  {
+    "nama": "Belajar",
+    "durasi": 40,
+    "prioritas": 10
+  },
+  {
+    "nama": "Menonton Film",
+    "durasi": 25,
+    "prioritas": 6
+  },
+  {
+    "nama": "Bersih-bersih",
+    "durasi": 15,
+    "prioritas": 5
+  }
+]

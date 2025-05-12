@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Belajar",
+        "durasi": 60,
+        "prioritas": 8
+    },
+    {
+        "nama": "Olahraga",
+        "durasi": 45
+        "prioritas": 7
+    },
+    {
+        "nama": "Makan Siang",
+        "durasi": "tiga puluh",
+        "prioritas": 6,
+    },
+    {
+        "nama": "Bersih-bersih"
+        "durasi": 25,
+        "prioritas": 5
+    ,
+    {
+        "nama": "Tidur Siang", "durasi": 90, "prioritas": 9

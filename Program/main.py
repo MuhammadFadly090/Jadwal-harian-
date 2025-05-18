@@ -6,24 +6,34 @@ from PyQt5.QtWidgets import (
     QTableWidget, QTableWidgetItem, QLabel, QFileDialog, QMessageBox
 )
 from jadwal import Aktivitas, jadwal_optimal
-from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt5.QtCore import QThread, pyqtSignal, QTimer
 
 
 class WorkerThread(QThread):
     hasil_selesai = pyqtSignal(dict, float)
+    gagal_timeout = pyqtSignal()
 
     def __init__(self, daftar_aktivitas, total_waktu):
         super().__init__()
         self.daftar_aktivitas = daftar_aktivitas
         self.total_waktu = total_waktu
+        self._is_timeout = False
 
     def run(self):
-        import time
         start_time = time.perf_counter()
-        hasil = jadwal_optimal(self.daftar_aktivitas, self.total_waktu)
-        end_time = time.perf_counter()
-        elapsed_time = (end_time - start_time) * 1000
-        self.hasil_selesai.emit(hasil, elapsed_time)
+        try:
+            hasil = jadwal_optimal(self.daftar_aktivitas, self.total_waktu)
+            if self._is_timeout:
+                return  # Tidak lakukan apapun jika sudah timeout
+            end_time = time.perf_counter()
+            elapsed_time = (end_time - start_time) * 1000
+            self.hasil_selesai.emit(hasil, elapsed_time)
+        except Exception:
+            self.gagal_timeout.emit()
+
+    def stop(self):
+        self._is_timeout = True
+        self.terminate()
         
 class App(QWidget):
     def __init__(self):
@@ -79,6 +89,11 @@ class App(QWidget):
 
         self.label_skor = QLabel("Total Skor: 0", self)
         layout.addWidget(self.label_skor)
+
+        self.timeout_timer = QTimer()
+        self.timeout_timer.setSingleShot(True)
+        self.timeout_timer.timeout.connect(self.handle_timeout)
+        self.timeout_duration = 3600000
 
         self.setLayout(layout)
         self.daftar_aktivitas = []
@@ -167,6 +182,8 @@ class App(QWidget):
         self.worker.hasil_selesai.connect(self.tampilkan_hasil_jadwal)
         self.worker.start()
         
+        self.timeout_timer.start(self.timeout_duration)
+        
     def tampilkan_hasil_jadwal(self, hasil, elapsed_time_ms):
         self.table_jadwal.setRowCount(0)
         for aktivitas in hasil['jadwal']:
@@ -179,12 +196,22 @@ class App(QWidget):
         self.label_skor.setText(f"Total Skor: {hasil['skor']} | Waktu Eksekusi: {elapsed_time_ms:.2f} ms")
         self.tombol_proses.setEnabled(True)
 
+        self.timeout_timer.stop()  # Hentikan timer jika proses selesai
+
+
     def clear_aktivitas(self):
         self.daftar_aktivitas.clear()
         self.table_aktivitas.setRowCount(0)
         self.table_jadwal.setRowCount(0)
         self.label_skor.setText("Total Skor: 0")
         self.input_waktu.clear()
+
+    def handle_timeout(self):
+        if self.worker.isRunning():
+            self.worker.stop()
+            self.label_skor.setText("Gagal: Waktu eksekusi melebihi batas (Timeout)")
+            QMessageBox.critical(self, "Timeout", "Proses memerlukan waktu yang terlalu lama sehingga dihentikan")
+            self.tombol_proses.setEnabled(True) 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

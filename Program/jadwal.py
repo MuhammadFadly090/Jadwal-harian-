@@ -20,8 +20,8 @@ def jadwal_optimal(daftar_aktivitas, total_waktu):
         'skor': 0
     }
 
-    max_skor_teoretis = sum(a.prioritas for a in aktivitas_urut)  # total skor maksimum
-    ambang_kepuasan = int(max_skor_teoretis * 0.95)  # misalnya, cukup 95% dari skor maksimal
+    max_skor_teoretis = sum(a.prioritas for a in aktivitas_urut)  
+    ambang_kepuasan = int(max_skor_teoretis * 0.80)  
 
     def backtrack(index, waktu_tersisa, jadwal_sementara, skor_sementara, skor_sisa):
         nonlocal hasil_terbaik
